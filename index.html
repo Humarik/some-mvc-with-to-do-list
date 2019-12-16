@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style> 
+	body {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+	}
+	p {
+		margin: 0;
+	}
+	.checkbox {
+		cursor: pointer;
+		height: 18px;
+		width: 18px;
+		margin-right: 5px;
+	}
+	.text-container {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		min-height: 60px;
+	}
+	.container{
+		display: flex;
+	}
+	.text {
+		text-align: center;
+		width: 100%;
+	}
+	.input_container{
+		padding: 10px;
+		width: 444px;
+		border: 1px solid grey;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.input__body {
+		display: flex;
+		height: 50px;
+		justify-content: center;
+		align-items: center;
+		background: gray;
+	}
+	.input {
+		font-size: 20px;
+		height: 25px;
+		margin-right: 5px;
+	}
+	.btn {
+		height: 30px;
+		border: none;
+		background: #ffffff;
+	}
+	.delete-container {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		height: 25px;
+	}
+	.delete-btn {
+		height: 21px;
+		width: 24px;
+		cursor: pointer;
+	}
+	.inProgress, .finished {
+		display: flex;
+		flex-wrap: wrap;
+		align-self: flex-start;
+		min-width: 200px;
+		max-width: 200px;
+		min-height: 122px;
+		padding: 10px 10px 0;
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid grey;
+		margin-bottom: 10px;
+	}
+	.task {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		flex: 200px;
+		min-height: 100px;
+		padding: 5px;
+		margin-bottom: 10px;
+		background: gray;
+		color: #ffffff;
+		border: 1px solid #ffffff;
+		word-break: break-all;
+		opacity: 1;
+		transition: opacity 1s;
+	}
+	.edit-btn {
+		width: 55px;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+	.edit-input {
+		text-align: center;
+		display: none;
+		width: 95px;
+	}
+</style>
+<body>
+	<div class="input_container">
+		<div class="input__body">
+			<input class="input">
+			<button class="btn"> click me </button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="inProgress"></div>
+		<div class="finished"></div>
+	</div>
+	<script src="js/code.js"></script>
+</body>
+</html>
